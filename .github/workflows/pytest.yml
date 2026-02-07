@@ -8,6 +8,8 @@ on:
 jobs:
   pytest:
     runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: .
     strategy:
       matrix:
         python-version: ["3.10", "3.11", "3.12"]
@@ -22,4 +24,4 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run pytest
-        run: pytest -q
+        run: python -m pytest -q
