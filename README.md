@@ -6,7 +6,7 @@ A simple Tic-Tac-Toe game with a Streamlit UI. Play by clicking the grid or by e
 
 Open the deployed app:
 
-- https://tictactoe-gqek7fxs3appxonjiaz59zo.streamlit.app/
+- https://tictactoe-zyxpgbna3wfrmzhy5tvchn.streamlit.app/
 
 ## How to Play
 
