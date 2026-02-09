@@ -31,6 +31,7 @@ class TestTicTacToe(unittest.TestCase):
     def test_parse_move(self):
         self.assertEqual(ttt.parse_move("1"), 0)
         self.assertEqual(ttt.parse_move("9"), 8)
+        self.assertEqual(ttt.parse_move(" 3 "), 2)
         self.assertIsNone(ttt.parse_move("0"))
         self.assertIsNone(ttt.parse_move("10"))
         self.assertIsNone(ttt.parse_move("a"))

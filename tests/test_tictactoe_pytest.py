@@ -29,7 +29,7 @@ def test_is_draw():
 
 @pytest.mark.parametrize(
     "raw, expected",
-    [("1", 0), ("9", 8), ("0", None), ("10", None), ("a", None)],
+    [("1", 0), ("9", 8), (" 3 ", 2), ("0", None), ("10", None), ("a", None)],
 )
 def test_parse_move(raw, expected):
     assert ttt.parse_move(raw) == expected
